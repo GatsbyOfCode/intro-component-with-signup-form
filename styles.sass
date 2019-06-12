@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap')
+
+*
+    box-sizing: border-box
+    
+html
+    font-size: 16px
+    font-family: 'Poppins'
+
+body
+    color: #ffffff
+    background-color: hsl(0, 100%, 74%)
+    background-image: url(C:/Users/jnewm/Desktop/intro-component-with-signup-form-master/images/bg-intro-desktop.png)
+    background-size: cover
+
+.btn:hover
+    background-color: hsl(152, 76%, 63%)
+
+@media only screen and (max-width: 800px) {
+body
+    background-image: url(C:/Users/jnewm/Desktop/intro-component-with-signup-form-master/images/bg-intro-mobile.png)
+    background-size: cover
+    display: flex
+    flex-direction: column
+    padding: 4%
+    
+header
+    order: 2
+    
+header p
+    text-align: center
+    height: 4rem
+    padding: 5% 15% 0 15%
+    font-size: 0.9rem
+    width: 100%
+    background-color: hsl(248, 32%, 49%)
+    border-radius: 7px
+    border: none
+    
+.container
+    display: flex
+    flex-direction: column
+    
+aside
+    order: 1
+    text-align: center
+    font-size: 1rem
+
+aside h1
+    margin-bottom: 0
+
+aside p
+    font-size: 0.9rem
+    line-height: 1.8rem
+    padding: 3%
+
+section
+    display: flex
+    flex-direction: column
+    order: 3
+    background-color: #ffffff
+    border-radius: 9px
+    padding: 0 5% 5% 5% 
+
+#terms
+    font-size: 0.8rem
+    color: hsl(246, 25%, 77%)
+    text-align: center
+
+.red
+    color: hsl(0, 100%, 74%)
+
+input
+    height: 2.5rem
+    border: 1px solid hsl(246, 25%, 77%)
+    border-radius: 9px
+    width: 100%
+    margin-top: 7%
+
+input::placeholder
+    padding-left: 5%
+    font-weight: 550
+    
+#error1,
+#error2,
+#error3,
+#error4
+    display: none
+    font-size: 0.8rem
+    color: hsl(0, 100%, 74%)
+    text-align: right
+    padding-right: 3%
+    margin: 0
+    
+.btn 
+    background-color: hsl(154, 59%, 51%)
+    color: #ffffff
+    font-weight: 550 
+    border: none}
+    
+@media only screen and (min-width: 801px) {
+.container
+    display: flex
+    flex-direction: column
+    padding: 3%
+    
+header
+    position: relative
+    border: none
+    border-radius: 9px
+    order: 2
+    height: 1%
+    width: 35%
+    text-align: center
+    background-color: hsl(248, 32%, 49%)
+    margin: -35% 0 0 55%
+    
+    
+aside
+    position: relative
+    order: 1
+    width: 40%
+    margin: 11% 0 0 6%
+    
+
+aside h1
+    font-size: 3rem
+    width: 100%
+
+aside p
+    width: 100%
+    font-size: 0.9rem
+
+section
+    position: relative
+    display: flex
+    flex-direction: column
+    order: 3
+    width: 35%
+    height: 10%
+    background-color: #ffffff
+    border: none
+    border-radius: 9px
+    margin: 2% 0 0 55%
+    
+input
+    height: 2.5rem
+    width: 100%
+    border-radius: 9px
+    border: 1px solid hsl(246, 25%, 77%)
+    margin-top: 10%
+
+
+input::placeholder
+    padding-left: 5%
+    font-weight: 550
+    
+#error1,
+#error2,
+#error3,
+#error4
+    display: none
+    color: hsl(0, 100%, 74%)
+    text-align: right
+    font-size: 0.8rem
+    padding-right: 5%
+    margin: 0
+
+.btn
+    border: none
+    background-color: hsl(154, 59%, 51%)
+    width: 100%
+    font-weight: 550
+    color: #ffffff
+    margin-bottom: 0
+    height: 2.8rem
+
+form
+    padding: 0 5% 5% 5%
+    
+#terms
+    color: hsl(246, 25%, 77%)
+    font-size: 0.8rem
+    width: 100%
+    text-align: center
+    margin-top: 0
+
+.red
+    color: hsl(0, 100%, 74%)}

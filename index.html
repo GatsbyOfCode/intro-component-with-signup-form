@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <link href="c:\Users\jnewm\Desktop\intro-component-with-signup-form-master\styles.css" type="text/css" rel="stylesheet"/>
+    </head>
+    <body>
+        <div class="container">
+        <header>
+            <p><strong>Try it free for 7 days</strong> then $20/mo. thereafter</p>
+        </header>
+            <aside>
+                <h1>Learn to code by watching others</h1>
+                <p>See how experienced developers solve problems in real-time.
+                    Watching scripted tutorials is great, but understanding how 
+                    developers think is invaluable.
+                </p>
+            </aside>
+            <section>
+                <form action="#" name="form1" class="myform">
+                    <input type="text" placeholder="First Name" class="fName"/>
+                    <p id="error1">first Name can not be empty</p>
+                    <input type="text" placeholder="Last Name" class="lName"/>
+                    <p id="error2">last Name can not be empty</p>
+                    <input type="email" placeholder="Email Address" class="email"/>
+                    <p id="error3">Looks like this is not an email</p>
+                    <input type="password" placeholder="Password" class="pwd"/>
+                    <p id="error4">Password can not be empty</p>
+                    <input type="submit" value="CLAIM YOUR FREE TRIAL" class="btn"/>
+                </form>
+                <p id="terms">By clicking the button, you are agreeing to our <strong class="red">Terms & Services</strong></p>
+            </section>
+        </div>
+        <script>
+            const form = document.forms.form1;
+            const regex = /[a-zA-Z]+[1-9]*[@]{1}[a-z]+[.]{1}[a-z]/;
+            const email = document.querySelector('.email');
+            const firstName = document.querySelector('.fName');
+            const lastName = document.querySelector('.lName');
+            const password = document.querySelector('.pwd');
+            const error1 = document.getElementById('error1');
+            const error2 = document.getElementById('error2');
+            const error3 = document.getElementById('error3');
+            const error4 = document.getElementById('error4');
+            const submit = document.querySelector('.btn');
+
+            function validateForm(e) {
+                if (!regex.test(email.value)) {
+                    email.style.border = '2px solid hsl(0, 100%, 74%)';
+                    email.style.background = 'URL(C:/Users/jnewm/Desktop/intro-component-with-signup-form-master/images/icon-error.svg) no-repeat scroll 95% 50%';
+                    error3.style.display = 'block';
+                } else {
+                    email.style.border = '2px solid hsl(130, 100%, 44%)';
+                    email.style.background = 'none';
+                    error3.style.display = 'none';
+                }
+
+                if (firstName.value === '') {
+                    firstName.style.border = '2px solid hsl(0, 100%, 74%)';
+                    firstName.style.background = 'URL(C:/Users/jnewm/Desktop/intro-component-with-signup-form-master/images/icon-error.svg) no-repeat scroll 95% 50%';
+                    error1.style.display = 'block';
+                } else {
+                    firstName.style.border = '2px solid hsl(130, 100%, 44%)';
+                    firstName.style.background = 'none';
+                    error1.style.display = 'none';
+                }
+
+                if (lastName.value === '') {
+                    lastName.style.border = '2px solid hsl(0, 100%, 74%)';
+                    lastName.style.background = 'URL(C:/Users/jnewm/Desktop/intro-component-with-signup-form-master/images/icon-error.svg) no-repeat scroll 95% 50%';
+                    error2.style.display = 'block';
+                } else {
+                    lastName.style.border = '2px solid hsl(130, 100%, 44%)';
+                    lastName.style.background = 'none';
+                    error2.style.display = 'none';
+                }
+
+                if (password.value === '') {
+                    password.style.border = '2px solid hsl(0, 100%, 74%)';
+                    password.style.background = 'URL(C:/Users/jnewm/Desktop/intro-component-with-signup-form-master/images/icon-error.svg) no-repeat scroll 95% 50%';
+                    error4.style.display = 'block';
+                } else {
+                    password.style.border = '2px solid hsl(130, 100%, 44%)';
+                    password.style.background = 'none';
+                    error4.style.display = 'none';
+                }
+                e.preventDefault();
+            }
+
+            form.addEventListener('submit', validateForm);
+        </script>
+    </body>
+    </html>
