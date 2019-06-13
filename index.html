@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-        <link href="/intro-component-with-signup-form-master/styles.css" type="text/css" rel="stylesheet"/>
+        <link href="/intro-component-with-signup-form/styles.css" type="text/css" rel="stylesheet"/>
     </head>
     <body>
         <div class="container">
@@ -49,7 +49,7 @@
             function validateForm(e) {
                 if (!regex.test(email.value)) {
                     email.style.border = '2px solid hsl(0, 100%, 74%)';
-                    email.style.background = 'URL(/intro-component-with-signup-form-master/images/icon-error.svg) no-repeat scroll 95% 50%';
+                    email.style.background = 'URL(/intro-component-with-signup-form/images/icon-error.svg) no-repeat scroll 95% 50%';
                     error3.style.display = 'block';
                 } else {
                     email.style.border = '2px solid hsl(130, 100%, 44%)';
@@ -59,7 +59,7 @@
 
                 if (firstName.value === '') {
                     firstName.style.border = '2px solid hsl(0, 100%, 74%)';
-                    firstName.style.background = 'URL(/intro-component-with-signup-form-master/images/icon-error.svg) no-repeat scroll 95% 50%';
+                    firstName.style.background = 'URL(/intro-component-with-signup-form/images/icon-error.svg) no-repeat scroll 95% 50%';
                     error1.style.display = 'block';
                 } else {
                     firstName.style.border = '2px solid hsl(130, 100%, 44%)';
@@ -69,7 +69,7 @@
 
                 if (lastName.value === '') {
                     lastName.style.border = '2px solid hsl(0, 100%, 74%)';
-                    lastName.style.background = 'URL(intro-component-with-signup-form-master/images/icon-error.svg) no-repeat scroll 95% 50%';
+                    lastName.style.background = 'URL(intro-component-with-signup-form/images/icon-error.svg) no-repeat scroll 95% 50%';
                     error2.style.display = 'block';
                 } else {
                     lastName.style.border = '2px solid hsl(130, 100%, 44%)';
@@ -79,7 +79,7 @@
 
                 if (password.value === '') {
                     password.style.border = '2px solid hsl(0, 100%, 74%)';
-                    password.style.background = 'URL(/intro-component-with-signup-form-master/images/icon-error.svg) no-repeat scroll 95% 50%';
+                    password.style.background = 'URL(/intro-component-with-signup-form/images/icon-error.svg) no-repeat scroll 95% 50%';
                     error4.style.display = 'block';
                 } else {
                     password.style.border = '2px solid hsl(130, 100%, 44%)';
